@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML chat sample</title>
+</head>
+
+<body>
+    <h1>not a skype</h1>
+    <div class="chat-header">
+        <h2>your friend's name</h2>
+        <img class="user-card__avatar" src="http://mysite.com/users/vitalik.jpg" alt="Vitalik B." width="60"
+            height="60" />
+        <p>was online 5 minutes ago</p>
+    </div>
+    <div class="chat-area">
+        <embed type="text/html" src="src/chat-area.html" width="700" height="500">
+    </div>
+
+    <form action="src/request.html" method="GET">
+        <!-- POST-method here! but this example... -->
+        <div>
+            <label for="msg-field">Send</label>
+            <input type="text" id="msg-field" required maxlength="350">
+        </div>
+        <button type="button">Attach file</button>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>
