@@ -13,9 +13,14 @@
         <h2>your friend's name</h2>
         <img class="user-card__avatar" src="http://mysite.com/users/vitalik.jpg" alt="Vitalik B." width="60"
             height="60" />
+
+<!--        это не параграф, это div, параграф в статьях / сообщениях-->
+<!--        Вот здесь как раз time[datetime] подходит отлично-->
         <p>was online 5 minutes ago</p>
     </div>
     <div class="chat-area">
+<!--        недостаток фреймов и <embed> что это лишний запрос на сервер и нагрузка на браузер, т.к. ты-->
+<!--        добавляешь новый документ на странице к уже существующему-->
         <embed type="text/html" src="src/chat-area.html" width="700" height="500">
     </div>
 
