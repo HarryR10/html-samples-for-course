@@ -8,37 +8,42 @@
 </head>
 
 <body>
-<!--это h1 а не h3 -->
-    <h3>Sign up form sample</h3>
-    <form action="src/request.html" method="GET">
-        <!-- POST-method here! but this example... -->
-        <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" required maxlength="50">
-        </div>
+    <header>
+        <h1>Sign up form sample</h1>
+    </header>
 
-        <div>
-            <label for="login">Login</label>
-            <input type="text" id="login" required maxlength="50">
-        </div>
+    <main>
+        <form action="src/request.html" method="GET">
+            <!-- POST-method here! but this example... -->
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" required maxlength="50">
+            </div>
 
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" required maxlength="50">
-        </div>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" id="login" required maxlength="50">
+            </div>
 
-        <div>
-            <label for="password-repeat">Repeat password</label>
-            <input type="password" id="password-repeat" required maxlength="50">
-        </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" required maxlength="50">
+            </div>
 
-        <div>
-            <input type="checkbox" id="agree-terms" required>
-            <label for="agree-terms">&nbsp;I agree to the terms of service</label>
-        </div>
+            <div>
+                <label for="password-repeat">Repeat password</label>
+                <input type="password" id="password-repeat" required maxlength="50">
+            </div>
 
-        <button type="submit">Sign Up</button>
-    </form>
+            <div>
+                <input type="checkbox" id="agree-terms" required>
+                <label for="agree-terms">&nbsp;I agree to the terms of service</label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+
 </body>
 
 </html>

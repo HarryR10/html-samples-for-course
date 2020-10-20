@@ -8,50 +8,38 @@
 </head>
 
 <body>
-<!--    dl dt dd - это список определений, когда есть термин и есть значение термина.-->
-<!--    сообщение в чате не является списком определений, это больше похоже на список сообщений ul / li,-->
-<!--    однако принято делать обычными div, т.к. в чате могут появляться дополнительные блоки-->
-    <dl class="dialogue">
-        <dt>Vitalik B.</dt>
-        <dd>
-            <div>
-                <p>Hi! How are you?</p>
-                <p>
-                    <small>
-                        <time datetime="2020-10-05 12:00">12:00</time>
-                    </small>
-                </p>
-            </div>
-        </dd>
+    <!--    dl dt dd - это список определений, когда есть термин и есть значение термина.-->
+    <!--    сообщение в чате не является списком определений, это больше похоже на список сообщений ul / li,-->
+    <!--    однако принято делать обычными div, т.к. в чате могут появляться дополнительные блоки-->
+    <div class="dialogue">
+        <div class="sender">Vitalik B.</div>
+        <div class="message">
+            <div class="txt__content">Hi! How are you?</div>
+            <small>
+                <time datetime="2020-10-05 12:00">12:00</time>
+            </small>
+        </div>
 
-        <dt>You</dt>
-        <dd>
-            <div>
-                <p>Nice! u?</p>
-                <p>
-                    <small>
-                        <time datetime="2020-10-05 13:00">13:00</time>
-                    </small>
-                </p>
-            </div>
-        </dd>
+        <div class="sender">You</div>
+        <div class="message">
+            <div class="txt__content">Nice! u?</div>
+            <small>
+                <time datetime="2020-10-05 13:00">13:00</time>
+            </small>
+        </div>
 
-        <dt>Vitalik B.</dt>
-        <dd>
-            <div>
-                <p>good :-)</p>
-                <p>
-                    <small>
-                        <time datetime="2020-10-05 13:01">13:01</time>
-                    </small>
-                </p>
-            </div>
-        </dd>
+        <div class="sender">Vitalik B.</div>
+        <div class="message">
+            <div class="txt__content">good :-)</div>
+            <small>
+                <time datetime="2020-10-05 13:01">13:01</time>
+            </small>
+        </div>
 
-        <dt>Vitalik B.</dt>
-        <dd>
-            <div>
-                <p>look what i found</p>
+        <div class="sender">Vitalik B.</div>
+        <div class="message">
+            <div class="txt__content">look what i found</div>
+            <div class="media__content">
                 <video controls width="600" height="400" poster="http://placekitten.com/600/400">
                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
                     <source src="video-ogg-format.ogg" type="video/ogg" />
@@ -59,14 +47,12 @@
                         <p>Video is not supported by this browser.</p>
                     </object>
                 </video>
-                <p>
-                    <small>
-                        <time datetime="2020-10-05 13:02">13:02</time>
-                    </small>
-                </p>
             </div>
-        </dd>
-    </dl>
+            <small>
+                <time datetime="2020-10-05 13:01">13:01</time>
+            </small>
+        </div>
+        <div>
 </body>
 
 </html>
