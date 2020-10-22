@@ -20,24 +20,73 @@
 
             <!--        это не параграф, это div, параграф в статьях / сообщениях-->
             <!--        Вот здесь как раз time[datetime] подходит отлично-->
-            <div>was online:</div>
-            <div class="last-visit" datetime="2020-10-05 13:02">5 minutes ago</div>
+            <div>was online:
+                <time class="last-visit" datetime="2020-10-05 13:02">5 minutes ago</time>
+            </div>
         </div>
         <div class="chat-area">
             <!--        недостаток фреймов и <embed> что это лишний запрос на сервер и нагрузка на браузер, т.к. ты-->
             <!--        добавляешь новый документ на странице к уже существующему-->
-            <embed type="text/html" src="src/chat-area.html" width="700" height="500">
-        </div>
+            <!-- <embed type="text/html" src="src/chat-area.html" width="700" height="500"> -->
 
-        <form action="src/request.html" method="GET">
-            <!-- POST-method here! but this example... -->
-            <div>
-                <label for="msg-field">Send</label>
-                <input type="text" id="msg-field" required maxlength="350">
+            <!--    dl dt dd - это список определений, когда есть термин и есть значение термина.-->
+            <!--    сообщение в чате не является списком определений, это больше похоже на список сообщений ul / li,-->
+            <!--    однако принято делать обычными div, т.к. в чате могут появляться дополнительные блоки-->
+
+            <div class="sender">Vitalik B.</div>
+            <div class="message">
+                <div class="txt__content">Hi! How are you?</div>
+                <small>
+                    <time datetime="2020-10-05 12:00">12:00</time>
+                </small>
             </div>
-            <button type="button">Attach file</button>
-            <button type="submit">Send</button>
-        </form>
+
+            <div class="sender">You</div>
+            <div class="message">
+                <div class="txt__content">Nice! u?</div>
+                <small>
+                    <time datetime="2020-10-05 13:00">13:00</time>
+                </small>
+            </div>
+
+            <div class="sender">Vitalik B.</div>
+            <div class="message">
+                <div class="txt__content">good :-)</div>
+                <small>
+                    <time datetime="2020-10-05 13:01">13:01</time>
+                </small>
+            </div>
+
+            <div class="sender">Vitalik B.</div>
+            <div class="message">
+                <div class="txt__content">look what i found</div>
+                <div class="media__content">
+                    <video controls width="600" height="400" poster="http://placekitten.com/600/400">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        <source src="video-ogg-format.ogg" type="video/ogg" />
+                        <object>
+                            <p>Video is not supported by this browser.</p>
+                        </object>
+                    </video>
+                </div>
+                <small>
+                    <time datetime="2020-10-05 13:01">13:01</time>
+                </small>
+            </div>
+            <div>
+
+            </div>
+
+            <form action="src/request.html" method="GET">
+                <!-- POST-method here! but this example... -->
+                <div>
+                    <label for="msg-field">Send</label>
+                    <input type="text" id="msg-field" required maxlength="350">
+                </div>
+                <button type="button">Attach file</button>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </main>
 
 </body>
